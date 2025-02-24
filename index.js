@@ -1,13 +1,13 @@
-precio = 400000
+let precio = 400000
 
 precioSpan = document.querySelector(".precio-inicial");
 precioSpan.innerHTML = precio;
 
-cantidad = 0
+let cantidad = 0
 cantidadSpan = document.querySelector(".cantidad");
 cantidadSpan.innerHTML = cantidad;
 
-total = precio * cantidad;
+let total = precio * cantidad;
 totalSpan = document.querySelector(".valor-total");
 totalSpan.innerHTML = total
 
@@ -16,7 +16,7 @@ function moreItems(){
     cantidad ++;
     cantidadSpan.innerHTML = cantidad;
 
-    total = precio * cantidad;
+    let total = precio * cantidad;
     totalSpan = document.querySelector(".valor-total");
     totalSpan.innerHTML = total
 }
@@ -27,7 +27,7 @@ function lessItems(){
     cantidad --;
     cantidadSpan.innerHTML = cantidad;}
 
-    total = precio * cantidad;
+    let total = precio * cantidad;
     totalSpan = document.querySelector(".valor-total");
     totalSpan.innerHTML = total
 }
